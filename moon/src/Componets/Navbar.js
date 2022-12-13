@@ -32,6 +32,7 @@ const Navbar = () => {
         <div className='logo'>
             <img src={Logo}></img>
         </div>
+
         <BgDiv className={`initial ${clicked ? 'active' : ''} ` }/>
        </NavContainer>
     </div>
@@ -43,7 +44,7 @@ export default Navbar
 const NavContainer = styled.nav`
   padding: .4rem;
   background-color: black; 
-  
+ 
   
   
 
@@ -62,7 +63,22 @@ const NavContainer = styled.nav`
 
   .logo img{
     width:140px;
-    height:60px;
+    height:40px;
+    display:flex;
+    justify-content:center;
+    aling-items:center;
+    
+  }
+
+  
+    
+ }
+
+ @media screen and (max-width:359px){
+
+  .logo img{
+    width:150px;
+    height:40px;
     display:flex;
     justify-content:center;
     aling-items:center;
@@ -82,6 +98,8 @@ const NavContainer = styled.nav`
     margin-right: auto;
     text-align: center;
     transition: all .5s ease;
+    
+    
     
     
     a{
@@ -107,10 +125,14 @@ const NavContainer = styled.nav`
     position: absolute;
     margin-left: auto;
     margin-right: auto;
-    top: 30%;
+    top: 13%;
     left: 0;
     right: 0;
     text-align: center;
+    background-color: black;
+    height:800px;
+    border-radius: 0 0 80% 0;
+    
     
     
 
@@ -128,6 +150,87 @@ const NavContainer = styled.nav`
       color:rgb(131, 146, 139);
     }
   }
+
+
+  @media screen and (max-width:699px){
+
+    .links.active{
+      width: 100%;
+      display: flex;
+      align-items:center;
+      justify-content:center;
+      flex-direction:column;
+      position: absolute;
+      margin-left: auto;
+      margin-right: auto;
+      top: 13%;
+      left: 0;
+      right: 0;
+      text-align: center;
+      background-color: black;
+      height:800px;
+      border-radius: 0 0 80% 0;
+      
+      
+      
+  
+      a{
+        font-size: 2rem;
+        margin-top: 1rem;
+        color: white;
+        background-color:black;
+        padding:10px;
+        border:1px solid white
+        
+        
+      }
+      a:hover{
+        color:rgb(131, 146, 139);
+      }
+    }
+
+  }
+
+  @media screen and (max-width:480px){
+
+    .links.active{
+      width: 100%;
+      display: flex;
+      align-items:center;
+      justify-content:center;
+      flex-direction:column;
+      position: absolute;
+      margin-left: auto;
+      margin-right: auto;
+      top: 13%;
+      left: 0;
+      right: 0;
+      text-align: center;
+      background-color: black;
+      height:800px;
+      border-radius: 0 0 80% 0;
+      
+      
+      
+  
+      a{
+        font-size: 2rem;
+        margin-top: 1rem;
+        color: white;
+        background-color:black;
+        padding:10px;
+        border:1px solid white
+        
+        
+      }
+      a:hover{
+        color:rgb(131, 146, 139);
+      }
+    }
+
+  }
+
+
   
 `
 
