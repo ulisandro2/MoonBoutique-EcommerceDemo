@@ -1,0 +1,13 @@
+header{
+    background-color: black;
+}
+
+.logo img{
+    width: 200px;
+    
+}
+
+#navbar{
+    z-index: -2;
+    
+}
