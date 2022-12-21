@@ -6,6 +6,7 @@ import foto2 from '../imagenes/topRosa.jpg'
 
 
 
+
 const Home = () => {
   
   let frase1 = 'Nuevos ingresos!'
@@ -39,6 +40,8 @@ const Home = () => {
        </div>
 
        </div>
+
+    
    
   </body>
 )
