@@ -4,6 +4,8 @@ import Navbar from './Componets/Navbar';
 import Home from './Componets/Home';
 import { BrowserRouter , Routes ,Route, Navigate } from 'react-router-dom';
 import ProductsList from './Componets/ProductsList';
+import InstagramGallery from './Componets/InstagramGallery';
+import MidSection from './Componets/MidSection';
 
 
 function App() {
@@ -18,8 +20,11 @@ function App() {
         
         
       </Routes>
+      <MidSection />
+      <InstagramGallery />
      </BrowserRouter>
-       </div>
+
+  </div>
   
 }
 

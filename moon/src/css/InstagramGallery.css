@@ -1,0 +1,64 @@
+.ig-section{
+    padding:0 0 500px;
+    display: flex;
+    flex-direction: column;
+}
+.ig-user__container{
+    display: flex;
+    justify-content: center;
+    align-items: center!important;
+    margin: 0 -15px;
+    height: 80px;
+}
+
+.container-items{
+    align-content: center;
+    max-width: 100%;
+    padding: 0 15px;
+    flex-basis: 0;
+}
+
+.item-center{
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+}
+
+.ig-logo{
+    height: 50px;
+    width: 50px;
+}
+
+.ig-gallery__container{
+    /* flex-basis: 0; */
+    max-width: 100%;
+    /* flex-grow: 1; */
+    position: relative;
+    width: 100%;
+}
+
+.grid-items{
+    width: 20%;
+    padding-top: 20%;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    display: block;
+    
+}
+
+.grid-items:first-child{
+    width: 40%;
+    padding-top: 40%;
+}
+
+.grid-items img{
+    position: absolute;
+    top: 0;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    opacity: 1;
+    cursor: pointer;
+}
