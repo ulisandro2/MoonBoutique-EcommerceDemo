@@ -10,31 +10,31 @@ const InstagramGallery = () => {
         <div className="container-items">
           <div className="item-center">
             <AiOutlineInstagram className="ig-logo"></AiOutlineInstagram>
-            <h2>mmoonclothing</h2>
+            <a className="ig-texto" target="_blank" href="https://www.instagram.com/mmoonclothing/"><h2>mmoonclothing</h2></a>
           </div>
         </div>
       </div>
       <div className="ig-gallery__container">
-        <div className="grid-items">
-          <img src={CARTERA1}></img>
+        <div className="items">
+          <a href="#"><img src={CARTERA1}></img></a>
         </div>
-        <div className="grid-items">
-          <img src={CARTERA1}></img>
+        <div className="items">
+          <a href="#"><img src={CARTERA1}></img></a> 
         </div>
-        <div className="grid-items">
-          <img src={CARTERA1}></img>
+        <div className="items">
+          <a href="#"><img src={CARTERA1}></img></a>
         </div>
-        <div className="grid-items">
-          <img src={CARTERA1}></img>
+        <div className="items">
+          <a href="#"><img src={CARTERA1}></img></a>
         </div>
-        <div className="grid-items">
-          <img src={CARTERA1}></img>
+        <div className="items">
+          <a href="#"><img src={CARTERA1}></img></a>
         </div>
-        <div className="grid-items">
-          <img src={CARTERA1}></img>
+        <div className="items">
+          <a href="#"><img src={CARTERA1}></img></a>
         </div>
-        <div className="grid-items">
-          <img src={CARTERA1}></img>
+        <div className="items">
+          <a href="#"><img src={CARTERA1}></img></a>
         </div>
       </div>
     </section>

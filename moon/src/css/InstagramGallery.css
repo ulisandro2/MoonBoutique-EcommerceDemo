@@ -37,7 +37,7 @@
     width: 100%;
 }
 
-.grid-items{
+.items{
     width: 20%;
     padding-top: 20%;
     position: relative;
@@ -47,12 +47,22 @@
     
 }
 
-.grid-items:first-child{
+.items:first-child{
     width: 40%;
     padding-top: 40%;
 }
+.ig-texto{
+    text-decoration: none;
+    color: #000;
+    transition: all 0.4s ease;
+}
 
-.grid-items img{
+.ig-texto:hover{
+    color: rgba(0, 0, 0, 0.5);
+}
+
+
+.items img{
     position: absolute;
     top: 0;
     object-fit: cover;
@@ -61,4 +71,9 @@
     padding: 10px;
     opacity: 1;
     cursor: pointer;
+    transition: all 0.8s ease;
+}
+
+.items img:hover{
+    opacity: 0.5;
 }
