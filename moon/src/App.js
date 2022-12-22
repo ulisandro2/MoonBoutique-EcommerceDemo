@@ -6,7 +6,8 @@ import { BrowserRouter , Routes ,Route, Navigate } from 'react-router-dom';
 // import ProductsList from './Componets/ProductsList';
 import InstagramGallery from './Componets/InstagramGallery';
 import MidSection from './Componets/MidSection';
-
+import ItemListContainer from './Containers/ItemListContainer';
+import ItemDetailContainer from './Containers/ItemDetailContainer'
 
 function App() {
   return <div className='App'>
@@ -14,12 +15,18 @@ function App() {
     <Navbar />
     <Routes>
          
-        <Route path='/' element={<Home/>}  />
+    <Route path='/' element={<Home/>}  />
+       
+       <Route path='products' element={<ItemListContainer/>}>
+            <Route path='category/:id' element={<ItemListContainer/>}  />
+            
+         </Route>
+
+       <Route path='/detail' element={<ItemDetailContainer/>} />
+     </Routes>
         
-        {/* <Route path='/products' element={<ProductsList/>} /> */}
         
-        
-      </Routes>
+     
       <MidSection />
       <InstagramGallery />
      </BrowserRouter>

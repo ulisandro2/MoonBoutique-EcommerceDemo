@@ -30,8 +30,9 @@ const ItemListContainer = () => {
      const queryCollection = collection(db , 'items');
 
      getDocs(id ? query(queryCollection,where('category' ,'==' ,id )) : queryCollection)
-     .then((resp)=> console.log(resp.docs.map((item)=> ({id : item.id , ...item.data()}))))
-
+     .then((resp)=> setProducts(resp.docs.map((item)=> ({id : item.id , ...item.data()}))))
+          
+     console.log(product)
 }, [id]);
 
 
