@@ -1,0 +1,19 @@
+.mid-section{
+    padding: 70px 0;
+    display: flex;
+}
+
+.mid-section__container{
+    margin: auto;
+    text-align: center;
+}
+
+.moon-title{
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.moon-description{
+    font-size: 30px;
+    
+}
