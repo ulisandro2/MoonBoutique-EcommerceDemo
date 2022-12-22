@@ -6,6 +6,7 @@ import { BrowserRouter , Routes ,Route, Navigate } from 'react-router-dom';
 // import ProductsList from './Componets/ProductsList';
 import InstagramGallery from './Componets/InstagramGallery';
 import MidSection from './Componets/MidSection';
+import Footer from './Componets/Footer';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
       </Routes>
       <MidSection />
       <InstagramGallery />
+      <Footer />
      </BrowserRouter>
 
   </div>
