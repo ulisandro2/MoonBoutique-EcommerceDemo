@@ -1,6 +1,73 @@
 .footer{
     background-color: #000;
-    height: 300px;
+    height: 100%;
     padding: 40px 0;
     margin-top: 40px;
+    
+}
+
+.footer-container{
+    max-width: 1140px;
+    padding: 0 15px;
+    margin: auto;   
+}
+
+.footer-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* --- Color white --- */
+.footer-item .ig-logo, .wpp-icon, .footer-item .col, .footer-info{
+    color: #fff;
+}
+
+.footer-menu{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.footer-menu li{
+    margin: 15px 0;
+    padding: 0 15px;
+}
+
+.footer-menu li a{
+    text-decoration: none;
+}
+
+.footer-info{
+    font-family: sans-serif;
+    transition: all 0.4s ease;
+}
+
+.footer-info:hover{
+    color: rgba(255, 255, 255, 0.6);
+}
+.contact{
+    display: block;
+}
+
+.col{
+    width: 33.333%;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.footer-icon{
+    font-size: 30px;
+    padding-right: 10px;
+    vertical-align: -0.3em;
 }
