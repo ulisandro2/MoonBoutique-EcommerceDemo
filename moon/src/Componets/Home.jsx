@@ -14,9 +14,9 @@ const Home = () => {
 
   return (
     <body >
-    <div className='fondo'>
+    {/* <div className='fondo'>
       <img src={Fondo}/>
-    </div>
+    </div> */}
      
     
  <div className='container'> 

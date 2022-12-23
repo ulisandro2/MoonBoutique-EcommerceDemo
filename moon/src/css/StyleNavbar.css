@@ -1,4 +1,4 @@
-header{
+/* header{
     background-color: black;
 }
 
@@ -13,5 +13,136 @@ header{
     
     
     
+} */
+
+*{
+    margin: 0;
+    padding: 0;
 }
 
+div{
+    display: block;
+}
+/* header{
+    background: background('..n/imagenes/elperro.jpg');
+    width: calc(100% - 40px);
+    top: 20px;   
+} */
+
+.header-container{
+    position: fixed;
+    top: 0;
+    left: 60px;
+    right: 60px;
+    z-index: 999;
+    transition: all 0.4s ease;
+}
+
+.header-container.active{
+    background-color: #000;
+    box-shadow: 5px 0 10px rgb(0 0 0 / 60%);
+}
+
+/* Info */
+.section-advertising{
+    padding: 5px 0;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    
+    /* position: sticky;
+    top: 0; */
+}
+
+.info__text{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Navegador */
+
+.nav-container{
+    /* background-color: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.9)); */
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 0 15px;
+    /* margin: 0 auto; */
+    /* width: 89.9%; */
+    /* align-items: center; */
+    /* height: 80px; */
+    /* position: fixed; */
+    /* top: 0px; 22px */
+    /* box-sizing: inherit; */
+}
+
+.nav-container__columnas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items: center!important;
+    margin: 0 -15px;
+    height: 80px;
+}
+
+.col{
+    max-width: 100%;
+    padding: 0 15px;
+    flex-basis: 0;
+    flex-grow: 1;
+    position: relative;
+}
+
+input{
+    background: none;
+    border-style: none;
+    border-radius: 5px;
+    color: #fff;
+}
+
+input::placeholder{
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+}
+
+input::selection{
+    background-color: #fff;
+    color: #000;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+}
+
+.logo{
+    align-items: center;
+}
+.moon{
+    height: 50px;
+    text-align: center;
+    display: flex;
+    margin: auto;
+}
+
+.jc-end{
+    justify-content: flex-end;
+
+}
+
+.col__laterales{
+    display: flex;
+    margin: 0 -15px;
+}
+
+.icon{
+    height: 28px;
+    width: 28px;
+    color: #fff;
+    padding: 0px;
+    margin: 0 15px;
+}
+
+.fondo-nav img{
+    position: relative;
+    top: -102px;
+    z-index: -10;
+    width: 100%;
+}
