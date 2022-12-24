@@ -42,7 +42,7 @@ const Navbar = () => {
                 <GiHamburgerMenu className="icon" />
                 <form className="searcher">
                   <div>
-                    <input className="search-input" type="search" placeholder='Buscar'/>
+                    <input className="search-input" type="text" placeholder='Buscar'/>
                     <button className="search-button"><CiSearch className="icon"></CiSearch></button>
                   </div>
                 </form>
@@ -50,7 +50,9 @@ const Navbar = () => {
             </div>
 
             <div class="col">
-              <div class="logo"><img src={Logo} class="moon"></img> </div>
+              <div class="logo">
+                <a href="#"><img src={Logo} class="moon"></img></a>
+              </div>
             </div>
 
             <div class="col">
