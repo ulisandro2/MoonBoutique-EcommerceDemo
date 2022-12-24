@@ -4,8 +4,8 @@ import '../css/StyleNavbar.css'
 import styled from 'styled-components';
 import BurguerButton from './BurguerButton';
 import {GiHamburgerMenu, GiShoppingBag} from 'react-icons/gi';
+import {CiSearch} from 'react-icons/ci'
 import { Link } from 'react-router-dom';
-import TopYCartera from '../imagenes/top y cartera.jpg';
 
 
 
@@ -21,7 +21,7 @@ const Navbar = () => {
  
   const[navbar , setNavbar] = useState(false);
   const changeBackground = () => {
-    if(window.scrollY >= 1700){
+    if(window.scrollY >= 500){
       setNavbar(true);
     }
     else{
@@ -39,8 +39,13 @@ const Navbar = () => {
           <div class="nav-container__columnas">
             <div class="col">
               <div class="col__laterales jc-start">
-                <GiHamburgerMenu class="icon" />
-                <input type="text" placeholder='Buscar'/>
+                <GiHamburgerMenu className="icon" />
+                <form className="searcher">
+                  <div>
+                    <input className="search-input" type="search" placeholder='Buscar'/>
+                    <button className="search-button"><CiSearch className="icon"></CiSearch></button>
+                  </div>
+                </form>
               </div>
             </div>
 
@@ -56,9 +61,6 @@ const Navbar = () => {
           </div>
         </nav>
       </div>
-      <div class="fondo-nav">
-            <img src={TopYCartera}></img>
-        </div>
     </header>
 
     // <div id='navbar'>

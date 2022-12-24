@@ -23,25 +23,25 @@ const InstagramGallery = () => {
       </div>
       <div className="ig-gallery__container">
         <div className="items">
-          <a href="#"><img src={Cartera1}></img></a>
+          <a target="_blank" href="https://www.instagram.com/p/Cj4LoB2uvE5/"><img src={Cartera1}></img></a>
         </div>
         <div className="items">
-          <a href="#"><img src={Cartera2}></img></a> 
+          <a target="_blank" href="https://www.instagram.com/p/Cj4LoB2uvE5/"><img src={Cartera2}></img></a> 
         </div>
         <div className="items">
-          <a href="#"><img src={Remeras}></img></a>
+          <a target="_blank" href="https://www.instagram.com/p/Cj7_QDYuovI/"><img src={Remeras}></img></a>
         </div>
         <div className="items">
-          <a href="#"><img src={RemeraNaranja}></img></a>
+          <a target="_blank" href="https://www.instagram.com/p/Cj7_QDYuovI/"><img src={RemeraNaranja}></img></a>
         </div>
         <div className="items">
-          <a href="#"><img src={Cartera3}></img></a>
+          <a target="_blank" href="https://www.instagram.com/p/Cj4LoB2uvE5/"><img src={Cartera3}></img></a>
         </div>
         <div className="items">
-          <a href="#"><img src={Remeras2}></img></a>
+          <a target="_blank" href="https://www.instagram.com/p/Cj7_QDYuovI/"><img src={Remeras2}></img></a>
         </div>
         <div className="items">
-          <a href="#"><img src={RemeraRosa}></img></a>
+          <a target="_blank" href="https://www.instagram.com/p/Cj7_QDYuovI/"><img src={RemeraRosa}></img></a>
         </div>
       </div>
     </section>

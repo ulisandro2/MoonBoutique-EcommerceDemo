@@ -23,11 +23,6 @@
 div{
     display: block;
 }
-/* header{
-    background: background('..n/imagenes/elperro.jpg');
-    width: calc(100% - 40px);
-    top: 20px;   
-} */
 
 .header-container{
     position: fixed;
@@ -40,37 +35,32 @@ div{
 
 .header-container.active{
     background-color: #000;
-    box-shadow: 5px 0 10px rgb(0 0 0 / 60%);
+    box-shadow: 0px 5px 10px rgb(0, 0, 0, .6);
 }
 
 /* Info */
 .section-advertising{
     padding: 5px 0;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
     color: white;
-    
-    /* position: sticky;
-    top: 0; */
 }
 
 .info__text{
     font-size: 15px;
-    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
 }
-/* Navegador */
 
+/* Navegador */
 .nav-container{
     /* background-color: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.9)); */
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.1);
     padding: 0 15px;
     /* margin: 0 auto; */
     /* width: 89.9%; */
     /* align-items: center; */
     /* height: 80px; */
-    /* position: fixed; */
     /* top: 0px; 22px */
-    /* box-sizing: inherit; */
 }
 
 .nav-container__columnas{
@@ -90,22 +80,67 @@ div{
     position: relative;
 }
 
-input{
-    background: none;
-    border-style: none;
-    border-radius: 5px;
-    color: #fff;
+.jc-end{
+    justify-content: flex-end;
+
 }
 
-input::placeholder{
+.jc-start{
+    justify-content: flex-start;
+}
+.col__laterales{
+    display: flex;
+    margin: 0 -15px;
+}
+
+.searcher{
+    display: block;
+    box-sizing: inherit;
+    margin: 0;
+    position: relative;
+    font-size: 14px;
+}
+
+.searcher div{
+    margin-top: -2px;
+    margin-bottom: 0;
+    position: relative;
+}
+.search-input{
+    border-color: #fff;
+    height: 32px;
+    background: transparent;
+    border-radius: 50px;
+    font-size: 12px;
+    display: block;
+    padding: 12px;
+    width: 100%;
+    border-style: none;
+    border: 1px solid rgba(0, 0, 0, 0.9);
+    appearance: none;
+    color: #000;
+    font-weight: 200;
+}
+
+.search-button{
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    margin-top: -12px;
+    font-size: 18px;
+    background: none;
+    border: 0;
+}
+
+/* .search-input::placeholder{
     background-color: rgba(0, 0, 0, 0.3);
     color: #fff;
 }
 
-input::selection{
+.search-input::selection{
     background-color: #fff;
     color: #000;
-}
+} */
 
 ul{
     display: flex;
@@ -115,21 +150,12 @@ ul{
 .logo{
     align-items: center;
 }
+
 .moon{
     height: 50px;
     text-align: center;
     display: flex;
     margin: auto;
-}
-
-.jc-end{
-    justify-content: flex-end;
-
-}
-
-.col__laterales{
-    display: flex;
-    margin: 0 -15px;
 }
 
 .icon{
@@ -138,11 +164,4 @@ ul{
     color: #fff;
     padding: 0px;
     margin: 0 15px;
-}
-
-.fondo-nav img{
-    position: relative;
-    top: -102px;
-    z-index: -10;
-    width: 100%;
 }

@@ -9,12 +9,14 @@ import MidSection from './Componets/MidSection';
 import ItemListContainer from './Containers/ItemListContainer';
 import ItemDetailContainer from './Containers/ItemDetailContainer';
 import Footer from './Componets/Footer';
+import MainBackground from './Componets/MainBackground';
 
 
 function App() {
   return <div className='App'>
     <BrowserRouter>
     <Navbar />
+    <MainBackground />
     <Routes>
          
     <Route path='/' element={<Home/>}  />
