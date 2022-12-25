@@ -14,3 +14,9 @@
     width: 50%;
     height: 100%;
 }
+
+@media screen and (max-width: 777px){
+    .fondo-nav img{
+        width: 100%;
+    }
+}
