@@ -3,6 +3,8 @@ import Fondo from '../imagenes/top y cartera.jpg'
 import '../css/StyleHome.css'
 import foto1 from '../imagenes/vestidoRosa.jpg'
 import foto2 from '../imagenes/topRosa.jpg'
+import MidSection from './MidSection'
+import InstagramGallery from './InstagramGallery'
 
 
 
@@ -42,16 +44,8 @@ const Home = () => {
        </div>
 
 
-       <div>
-        <ul>
-          <li>remeras </li>
-          <li>remeras </li>
-          <li>remeras </li>
-          <li>remeras </li>
-          
-        </ul>
-       </div>
-
+      <MidSection/>
+     <InstagramGallery/>
     
    
   </body>

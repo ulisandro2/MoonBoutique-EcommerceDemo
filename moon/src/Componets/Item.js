@@ -9,6 +9,8 @@ const Item = ({product}) => {
         
          <h1>Remra</h1>
          <p>comprar</p>
+         
+
     </div>
   )
 }
