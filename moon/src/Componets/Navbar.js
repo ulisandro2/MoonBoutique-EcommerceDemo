@@ -3,7 +3,10 @@ import Logo from '../imagenes/Moon-white-sin-b.png'
 import '../css/StyleNavbar.css'
 import styled from 'styled-components';
 import BurguerButton from './BurguerButton';
+import {GiHamburgerMenu, GiShoppingBag} from 'react-icons/gi';
+import {CiSearch} from 'react-icons/ci'
 import { Link } from 'react-router-dom';
+
 
 
 const Navbar = () => {
@@ -11,31 +14,76 @@ const Navbar = () => {
  const [clicked , setClicked] = useState(false)
     
  const handleClick = () =>{
-    
+
     setClicked(!clicked)
 
- }
+  }
  
- return (
-    <div id='navbar'>
-   
-       <NavContainer>
-        <div className={`links ${clicked ? 'active' : ''} ` }>
-        <Link style={{textDecoration:'none',}} to='/'>Inicio</Link>
-        <Link style={{textDecoration:'none',}} to='/products'>Productos</Link>
-            <a href='/'>Contacto</a>
-            <a href='/'>Informacion</a>
-        </div>
-        <div className='burguer'>
-       <BurguerButton clicked={clicked} handleClick={handleClick} />
-       </div>
-        <div className='logo'>
-            <img src={Logo}></img>
-        </div>
+  const[navbar , setNavbar] = useState(false);
+  const changeBackground = () => {
+    if(window.scrollY >= 500){
+      setNavbar(true);
+    }
+    else{
+      setNavbar(false);
+    }
+  };
 
-        <BgDiv className={`initial ${clicked ? 'active' : ''} ` }/>
-       </NavContainer>
-    </div>
+  window.addEventListener('scroll', changeBackground);
+
+  return (
+    <header>
+      <div className={navbar ? 'header-container active' : 'header-container'} >
+        <section class="section-advertising"><h6 className="info__text">Turip ip ip / -Elperro qepd</h6></section>
+        <nav class="nav-container">
+          <div class="nav-container__columnas">
+            <div class="col">
+              <div class="col__laterales jc-start">
+                <GiHamburgerMenu className="icon" />
+                <form className="searcher">
+                  <div>
+                    <input className="search-input" type="text" placeholder='Buscar'/>
+                    <button className="search-button"><CiSearch className="icon"></CiSearch></button>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="logo">
+                <a href="#"><img src={Logo} class="moon"></img></a>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="col__laterales jc-end">
+                <GiShoppingBag class="icon"></GiShoppingBag>
+              </div>  
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    // <div id='navbar'>
+   
+    //    <NavContainer>
+    //     <div className={`links ${clicked ? 'active' : ''} ` }>
+    //     <Link style={{textDecoration:'none',}} to='/'>Inicio</Link>
+    //     <Link style={{textDecoration:'none',}} to='/products'>Productos</Link>
+    //         <a href='/'>Contacto</a>
+    //         <a href='/'>Informacion</a>
+    //     </div>
+    //     <div className='burguer'>
+    //    <BurguerButton clicked={clicked} handleClick={handleClick} />
+    //    </div>
+    //     <div className='logo'>
+    //         <img src={Logo}></img>
+    //     </div>
+
+    //     <BgDiv className={`initial ${clicked ? 'active' : ''} ` }/>
+    //    </NavContainer>
+    // </div>
   )
 }
 

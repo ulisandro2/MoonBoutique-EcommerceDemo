@@ -1,14 +1,15 @@
 .ig-section{
-    padding:0 0 500px;
+    padding:0 0 150px;
     display: flex;
     flex-direction: column;
 }
+
 .ig-user__container{
     display: flex;
     justify-content: center;
     align-items: center!important;
     margin: 0 -15px;
-    height: 80px;
+    margin: 45px 0;
 }
 
 .container-items{
@@ -27,6 +28,7 @@
 .ig-logo{
     height: 50px;
     width: 50px;
+    color: #212529;
 }
 
 .ig-gallery__container{
@@ -57,8 +59,14 @@
     transition: all 0.4s ease;
 }
 
+.ig-texto h2{
+    font-weight: 700;
+    margin: 0;
+    
+}
+
 .ig-texto:hover{
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(21, 25, 29, 0.5);
 }
 
 

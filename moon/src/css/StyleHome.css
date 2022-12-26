@@ -1,11 +1,6 @@
-
- 
- .fondo img{
+  .fondo img{
     width: 100%;
-    
-    height: 1000px;
-    
-    
+    height: 1000px;   
 }
 
 @media screen and (max-width:470px) {
@@ -51,14 +46,7 @@
 .frase1 h2{
     font-size: 30px;
     text-align: center;
-    font-family: sans-serif;
     font-weight: 900;
-    
-    
-   
-    
-    
-    
 }
 
 .image2{
@@ -82,14 +70,7 @@
 .frase2 h2{
     font-size: 30px;
     text-align: center;
-    font-family: sans-serif;
     font-weight: 900;
-    
-    
-   
-    
-    
-    
 }
 
 
