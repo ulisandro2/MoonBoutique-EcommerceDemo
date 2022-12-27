@@ -1,13 +1,70 @@
+import styled from 'styled-components';
+import React ,{useState}from 'react'
+import {GiHamburgerMenu} from 'react-icons/gi'
+import { GiShoppingBag} from 'react-icons/gi';
+import Logo from '../imagenes/Moon-white-sin-b.png';
 
 
-*{
-    margin: 0;
-    padding: 0;
+
+const StyledNav = () => {
+
+
+    const[navbar , setNavbar] = useState(false);
+const changeBackground = () => {
+  if(window.scrollY >= 500){
+    setNavbar(true);
+  }
+  else{
+    setNavbar(false);
+  }
+};
+
+window.addEventListener('scroll', changeBackground);
+
+
+const [sidebar , setSidebar] = useState(false)
+const showSidebar = () => setSidebar(!sidebar)
+
+  return (
+      <header >
+        <div className={navbar ? 'header-container active' : 'header-container'} >
+          <section className="section-advertising"><h6 className="info__text">Turip ip ip / -Elperro qepd</h6></section>
+          <nav className="nav-container" >
+            <div className="nav-container__columnas">
+              <div className="col">
+                <div className="col__laterales jc-start">
+              
+               
+                  <GiHamburgerMenu className="icon" onClick={showSidebar} />
+                  
+               
+               
+                </div>
+              </div>
+  
+              <div className="col">
+                <div className="logo">
+                  <a href="#"><img alt='' src={Logo} className="moon"></img></a>
+                </div>
+              </div>
+  
+              <div className="col">
+                <div className="col__laterales jc-end">
+                  <GiShoppingBag className="icon"></GiShoppingBag>
+                </div>  
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+  )
 }
 
-div{
-    display: block;
-}
+export default StyledNav
+
+export const Container = styled.div`
+
+
 
 .header-container{
     position: fixed;
@@ -151,8 +208,4 @@ ul{
 
 }
 
-
-
-
-
-
+`

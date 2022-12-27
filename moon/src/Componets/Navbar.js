@@ -1,10 +1,13 @@
 import React, {useState} from 'react'
 import Logo from '../imagenes/Moon-white-sin-b.png';
 import '../css/StyleNavbar.css';
-import BurguerButton from './BurguerButton';
+
 import { GiShoppingBag} from 'react-icons/gi';
 import {CiSearch} from 'react-icons/ci';
-// import { Link } from 'react-router-dom';
+import {GiHamburgerMenu} from 'react-icons/gi'
+import SidebarData from './SidebarData';
+import { Container } from '../styled-componets/styled';
+
 
 
 
@@ -12,52 +15,62 @@ const Navbar = () => {
  
     
  
-  const[navbar , setNavbar] = useState(false);
-  const changeBackground = () => {
-    if(window.scrollY >= 500){
-      setNavbar(true);
-    }
-    else{
-      setNavbar(false);
-    }
-  };
+  // const[navbar , setNavbar] = useState(false);
+  // const changeBackground = () => {
+  //   if(window.scrollY >= 500){
+  //     setNavbar(true);
+  //   }
+  //   else{
+  //     setNavbar(false);
+  //   }
+  // };
 
-  window.addEventListener('scroll', changeBackground);
+  // window.addEventListener('scroll', changeBackground);
+
+
+  // const [sidebar , setSidebar] = useState(false)
+  // const showSidebar = () => setSidebar(!sidebar)
+
 
   return (
-    <header>
-      <div className={navbar ? 'header-container active' : 'header-container'} >
-        <section className="section-advertising"><h6 className="info__text">Turip ip ip / -Elperro qepd</h6></section>
-        <nav className="nav-container">
-          <div className="nav-container__columnas">
-            <div className="col">
-              <div className="col__laterales jc-start">
-                {/* <GiHamburgerMenu className="icon" /> */}
-                <BurguerButton className='icon'/>
-                <form className="searcher">
-                  <div>
-                    <input className="search-input" type="text" placeholder='Buscar'/>
-                    <button className="search-button"><CiSearch className="icon"></CiSearch></button>
-                  </div>
-                </form>
-              </div>
-            </div>
+    // <header >
+    //   <div className={navbar ? 'header-container active' : 'header-container'} >
+    //     <section className="section-advertising"><h6 className="info__text">Turip ip ip / -Elperro qepd</h6></section>
+    //     <nav className="nav-container" >
+    //       <div className="nav-container__columnas">
+    //         <div className="col">
+    //           <div className="col__laterales jc-start">
+            
+             
+    //             <GiHamburgerMenu className="icon" onClick={showSidebar} />
+                
+             
+             
+    //           </div>
+    //         </div>
 
-            <div className="col">
-              <div className="logo">
-                <a href="#"><img alt='' src={Logo} className="moon"></img></a>
-              </div>
-            </div>
+    //         <div className="col">
+    //           <div className="logo">
+    //             <a href="#"><img alt='' src={Logo} className="moon"></img></a>
+    //           </div>
+    //         </div>
 
-            <div className="col">
-              <div className="col__laterales jc-end">
-                <GiShoppingBag className="icon"></GiShoppingBag>
-              </div>  
-            </div>
-          </div>
-        </nav>
-      </div>
-    </header>
+    //         <div className="col">
+    //           <div className="col__laterales jc-end">
+    //             <GiShoppingBag className="icon"></GiShoppingBag>
+    //           </div>  
+    //         </div>
+    //       </div>
+    //     </nav>
+    //   </div>
+    // </header>
+
+
+
+    <Container>
+
+      
+    </Container>
 
   )
 }
