@@ -36,15 +36,15 @@ const Home = () => {
           </div>
         </div>
 
-<<<<<<< HEAD
+
 
       <MidSection/>
      <InstagramGallery/>
     
    
-=======
+
       </div>  
->>>>>>> 0706de21cdb906e993d860a99175f9e971987f03
+
   </body>
 )
 }
