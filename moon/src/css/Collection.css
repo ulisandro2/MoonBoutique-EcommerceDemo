@@ -1,0 +1,13 @@
+.collection{
+    padding: 0 20px;
+    box-sizing: inherit;
+}
+
+.container{
+    width: 100%;
+    margin: auto;
+}
+
+.flex-container{
+    display: flex;
+}
