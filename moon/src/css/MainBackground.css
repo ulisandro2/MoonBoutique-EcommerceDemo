@@ -1,0 +1,22 @@
+.fondo-nav{
+    height: calc(100vh - 30px);
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.fondo-nav img{
+    object-fit: cover;
+    top: -102px;
+    z-index: -10;
+    width: 50%;
+    height: 100%;
+}
+
+@media screen and (max-width: 777px){
+    .fondo-nav img{
+        width: 100%;
+    }
+}

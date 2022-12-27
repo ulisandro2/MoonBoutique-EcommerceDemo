@@ -1,6 +1,7 @@
 .mid-section{
     padding: 70px 0;
     display: flex;
+    color: #212529;
 }
 
 .mid-section__container{
@@ -11,9 +12,9 @@
 .moon-title{
     font-size: 40px;
     font-weight: bolder;
+    
 }
 
 .moon-description{
     font-size: 30px;
-    
 }

@@ -1,19 +1,67 @@
 *{
     padding: 0;
     margin: 0;
+    font-family: 'Lexend', sans-serif;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-.App{
-     
-     width: 100%;
-     min-height: 100vh;
-     margin: 0 auto;
-     box-sizing: 0 2px 6px green;
-     padding: 0 60px;
-     box-sizing: border-box;
+.App{ 
+    width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+    box-sizing: 0 2px 6px green;
+    position: relative;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
+.body-border-top,
+.body-border-bottom {
+    height: 20px;
+    background-color: #fff;
+}
+.body-border-right,
+.body-border-left {
+    width: 20px;
+    /* background-color: #fff; */
+}
+
+.body-border-top {
+    /* height: 10px; */
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 10000;
+}
+
+.body-border-right {
+    height: 100%;
+    /* width: 10px; */
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    z-index: 10000;
+}
+
+.body-border-bottom {
+    /* height: 10px; */
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    z-index: 10000;
+}
+
+.body-border-left {
+    height: 100%;
+    /* width: 10px; */
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    z-index: 10000;
+}
 
 @media screen and (max-width:400px) {
     

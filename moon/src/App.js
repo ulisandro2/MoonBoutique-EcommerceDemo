@@ -2,27 +2,38 @@
 import './index.css';
 import Navbar from './Componets/Navbar';
 import Home from './Componets/Home';
-import { BrowserRouter , Routes ,Route, Navigate } from 'react-router-dom';
-// import ProductsList from './Componets/ProductsList';
-import InstagramGallery from './Componets/InstagramGallery';
-import MidSection from './Componets/MidSection';
+import { BrowserRouter , Routes ,Route,  } from 'react-router-dom';
+import ItemListContainer from './Containers/ItemListContainer';
+
+import Footer from './Componets/Footer';
+import MainBackground from './Componets/MainBackground.js'
+import Borders from './Componets/Borders';
 
 
 function App() {
   return <div className='App'>
     <BrowserRouter>
     <Navbar />
-    <Routes>
-         
-        <Route path='/' element={<Home/>}  />
+    <MainBackground/>
+  <Routes>
+  <Route path='/' element={<Home/>}/>
+           
+           <Route path='products' element={<ItemListContainer/>}>
+            <Route path='category/:id' element={<ItemListContainer/>}  />
+            
+         </Route>
+  </Routes>
         
-        {/* <Route path='/products' element={<ProductsList/>} /> */}
+
         
-        
-      </Routes>
-      <MidSection />
-      <InstagramGallery />
-     </BrowserRouter>
+     
+      
+
+    
+
+      <Footer />
+      <Borders />
+    </BrowserRouter>
 
   </div>
   

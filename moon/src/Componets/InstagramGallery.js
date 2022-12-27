@@ -1,6 +1,13 @@
 import React from 'react'
 import '../css/InstagramGallery.css'
-import CARTERA1 from '../imagenes/cartera.jpg'
+import Cartera1 from '../imagenes/cartera.jpg'
+import Cartera2 from '../imagenes/cartera2.jpg'
+import Cartera3 from '../imagenes/cartera3.jpg'
+import RemeraNaranja from '../imagenes/remeraNaranja.jpg'
+import RemeraRosa from '../imagenes/remeraRosa.jpg'
+import Remeras from '../imagenes/remeras.jpg'
+import Remeras2 from '../imagenes/remeras2.jpg'
+
 import {AiOutlineInstagram} from 'react-icons/ai'
 
 const InstagramGallery = () => {
@@ -16,25 +23,25 @@ const InstagramGallery = () => {
       </div>
       <div className="ig-gallery__container">
         <div className="items">
-          <a href="#"><img src={CARTERA1}></img></a>
+          <a target="_blank" href="https://www.instagram.com/p/Cj4LoB2uvE5/"><img src={Cartera1}></img></a>
         </div>
         <div className="items">
-          <a href="#"><img src={CARTERA1}></img></a> 
+          <a target="_blank" href="https://www.instagram.com/p/Cj4LoB2uvE5/"><img src={Cartera2}></img></a> 
         </div>
         <div className="items">
-          <a href="#"><img src={CARTERA1}></img></a>
+          <a target="_blank" href="https://www.instagram.com/p/Cj7_QDYuovI/"><img src={Remeras}></img></a>
         </div>
         <div className="items">
-          <a href="#"><img src={CARTERA1}></img></a>
+          <a target="_blank" href="https://www.instagram.com/p/Cj7_QDYuovI/"><img src={RemeraNaranja}></img></a>
         </div>
         <div className="items">
-          <a href="#"><img src={CARTERA1}></img></a>
+          <a target="_blank" href="https://www.instagram.com/p/Cj4LoB2uvE5/"><img src={Cartera3}></img></a>
         </div>
         <div className="items">
-          <a href="#"><img src={CARTERA1}></img></a>
+          <a target="_blank" href="https://www.instagram.com/p/Cj7_QDYuovI/"><img src={Remeras2}></img></a>
         </div>
         <div className="items">
-          <a href="#"><img src={CARTERA1}></img></a>
+          <a target="_blank" href="https://www.instagram.com/p/Cj7_QDYuovI/"><img src={RemeraRosa}></img></a>
         </div>
       </div>
     </section>
