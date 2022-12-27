@@ -38,12 +38,13 @@ const Home = () => {
 
 
 
-      <MidSection/>
-     <InstagramGallery/>
+   
     
    
 
       </div>  
+      <MidSection/>
+     <InstagramGallery/>
 
   </body>
 )
