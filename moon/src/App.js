@@ -2,11 +2,11 @@
 import './index.css';
 import Navbar from './Componets/Navbar';
 import Home from './Componets/Home';
-import { BrowserRouter , Routes ,Route, Navigate } from 'react-router-dom';
+import { BrowserRouter , Routes ,Route,  } from 'react-router-dom';
 import ItemListContainer from './Containers/ItemListContainer';
-import ItemDetailContainer from './Containers/ItemDetailContainer';
+
 import Footer from './Componets/Footer';
-import MainBackground from './Componets/MainBackground';
+import MainBackground from './Componets/MainBackground.js'
 import Borders from './Componets/Borders';
 
 
@@ -14,6 +14,7 @@ function App() {
   return <div className='App'>
     <BrowserRouter>
     <Navbar />
+    <MainBackground/>
   <Routes>
   <Route path='/' element={<Home/>}/>
            
