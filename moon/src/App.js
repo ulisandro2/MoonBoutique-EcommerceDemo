@@ -2,7 +2,7 @@
 import './index.css';
 import Navbar from './Componets/Navbar';
 import Home from './Componets/Home';
-import { BrowserRouter , Routes ,Route, Navigate } from 'react-router-dom';
+import { BrowserRouter , Routes ,Route,  } from 'react-router-dom';
 import ItemListContainer from './Containers/ItemListContainer';
 
 import Footer from './Componets/Footer';

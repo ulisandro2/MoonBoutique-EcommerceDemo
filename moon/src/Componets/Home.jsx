@@ -1,5 +1,4 @@
 import React from 'react'
-import Fondo from '../imagenes/top y cartera.jpg'
 import '../css/StyleHome.css'
 import foto1 from '../imagenes/vestidoRosa.jpg'
 import foto2 from '../imagenes/topRosa.jpg'

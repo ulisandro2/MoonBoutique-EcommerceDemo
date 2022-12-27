@@ -7,7 +7,7 @@ import RemeraNaranja from '../imagenes/remeraNaranja.jpg'
 import RemeraRosa from '../imagenes/remeraRosa.jpg'
 import Remeras from '../imagenes/remeras.jpg'
 import Remeras2 from '../imagenes/remeras2.jpg'
-import TopYCartera from '../imagenes/top y cartera.jpg'
+
 import {AiOutlineInstagram} from 'react-icons/ai'
 
 const InstagramGallery = () => {
