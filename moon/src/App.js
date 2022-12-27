@@ -28,6 +28,7 @@ function App() {
 
         <Route path='/detail' element={<ItemDetailContainer/>} />
       </Routes>
+      
         
       <MidSection />
       <InstagramGallery />
