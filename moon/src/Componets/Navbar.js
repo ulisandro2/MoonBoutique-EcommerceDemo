@@ -3,9 +3,10 @@ import Logo from '../imagenes/Moon-white-sin-b.png';
 import '../css/StyleNavbar.css';
 
 import { GiShoppingBag} from 'react-icons/gi';
-import {CiSearch} from 'react-icons/ci';
-import {GiHamburgerMenu} from 'react-icons/gi'
-import SidebarData from './SidebarData';
+import StyleBurguer from './StyleBurguer';
+
+
+
 
 
 
@@ -28,8 +29,7 @@ const Navbar = () => {
   window.addEventListener('scroll', changeBackground);
 
 
-  const [sidebar , setSidebar] = useState(false)
-  const showSidebar = () => setSidebar(!sidebar)
+
 
 
   return (
@@ -42,8 +42,8 @@ const Navbar = () => {
               <div className="col__laterales jc-start">
             
              
-                <GiHamburgerMenu className="icon" onClick={showSidebar} />
-                
+                {/* <GiHamburgerMenu className="icon"  /> */}
+                <StyleBurguer/>
              
              
               </div>

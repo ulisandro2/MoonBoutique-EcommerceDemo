@@ -8,6 +8,7 @@ import InstagramGallery from './InstagramGallery'
 
 
 
+
 const Home = () => {
   
   let frase1 = 'Nuevos ingresos!'
@@ -44,6 +45,9 @@ const Home = () => {
       </div>  
       <MidSection/>
      <InstagramGallery/>
+
+
+  
 
   </body>
 )
