@@ -1,11 +1,11 @@
 import React,{useState} from 'react'
-import {GiHamburgerMenu} from 'react-icons/gi'
+
 import styled from 'styled-components'
 import LeftNav from './LeftNav'
 
 
 const Burguer =styled.div`
-   
+    cursor: pointer;
     height: 28px;
     width: 28px;
     color: #0f0e0e;
@@ -51,7 +51,7 @@ const [open ,setOpen ] =useState(false)
     <>
     <LeftNav open={open}/>
     <Burguer  open={open} onClick={()=> setOpen(!open)}>
-    {/* <GiHamburgerMenu className="icon"  /> */}
+    
     
     <div></div>
     <div></div>
