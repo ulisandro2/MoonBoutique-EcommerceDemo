@@ -4,6 +4,7 @@ import '../css/StyleNavbar.css';
 
 import { GiShoppingBag} from 'react-icons/gi';
 import StyleBurguer from './StyleBurguer';
+import MainBackground from './MainBackground';
 
 
 
@@ -33,6 +34,7 @@ const Navbar = () => {
 
 
   return (
+    <>
     <header >
       <div className={navbar ? 'header-container active' : 'header-container'} >
         <section className="section-advertising"><h6 className="info__text">Turip ip ip / -Elperro qepd</h6></section>
@@ -65,8 +67,10 @@ const Navbar = () => {
       </div>
     </header>
 
+   
 
 
+    </>
 
 
   )

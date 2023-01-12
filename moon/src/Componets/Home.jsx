@@ -4,6 +4,7 @@ import foto1 from '../imagenes/vestidoRosa.jpg'
 import foto2 from '../imagenes/topRosa.jpg'
 import MidSection from './MidSection'
 import InstagramGallery from './InstagramGallery'
+import MainBackground from './MainBackground'
 
 
 
@@ -15,6 +16,10 @@ const Home = () => {
   let frase2 = 'Verano 22/23'
 
   return (
+
+    <>
+
+    <MainBackground/>
     <body>
       <div className='container'> 
 
@@ -50,6 +55,8 @@ const Home = () => {
   
 
   </body>
+
+  </>
 )
 }
 

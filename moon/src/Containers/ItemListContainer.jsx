@@ -6,19 +6,7 @@ import { collection,getDocs,getFirestore,query,where } from 'firebase/firestore'
 
 
 
-// const film = [
-//     {id:1 , image:'https://www.instagram.com/p/CkJVvahuIlg/?utm_source=ig_web_button_share_sheet' , title:'Top rosa'
-//     ,price:1500
-  
-//   },
-//     {id:2 , image:'https://www.instagram.com/p/CkJVvahuIlg/?utm_source=ig_web_button_share_sheet' , title:'Top negro'
-//     ,price:2500
-  
-//   },
-//     {id:3 , image:'https://www.instagram.com/p/CkJVvahuIlg/?utm_source=ig_web_button_share_sheet' , title:'Top azul'
-//     ,price:1000 
-//   }
-// ]
+
 
 const ItemListContainer = () => {
   

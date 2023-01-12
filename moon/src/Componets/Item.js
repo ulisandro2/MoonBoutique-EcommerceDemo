@@ -1,18 +1,38 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { Link } from 'react-router-dom'
+import { CartContext } from '../context/CartContext'
+
+
+import '../css/StyleItem.css'
 
 
 const Item = ({product}) => {
-  return (
-    <div>
-      <h1> {product.price}</h1>
-         <p>{product.title}</p> 
-        
-         <h1>Remra</h1>
-         <p>comprar</p>
-         
 
+  const {AddToCart} = useContext(CartContext)
+  const onAdd = (amount) => {
+    AddToCart(amount,product)
+  }
+
+  return (
+    
+      <div className='wrapper'>
+    <div className='card'>
+      <img src={product.img} className='card-img'/>
+      <div className='card-body'>
+        <h2 className='card-title'>{product.title}</h2>
+        <p className='card-description'>{product.category}</p>
+        <h3 className='card-price'>{product.price}</h3>
+        <button className='card-btn'  >Ad to cart</button>
+        <Link to={`/detail/${product.id}`} >
+        <button className='card-btn2'>Details</button>
+        </Link>
+      </div>
     </div>
+    </div>
+   
   )
 }
+
+
 
 export default Item

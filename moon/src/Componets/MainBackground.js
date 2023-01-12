@@ -6,7 +6,7 @@ import '../css/MainBackground.css';
 
 const MainBackground = () => {
   return (
-    <section class="fondo-nav">
+    <section className="fondo-nav">
         <img src={VestidoNegro2}></img>
         <img src={VestidoNegro1}></img>
     </section>

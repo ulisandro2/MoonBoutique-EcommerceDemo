@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 const Ul =styled.ul`
@@ -34,10 +35,10 @@ const Ul =styled.ul`
 const LeftNav = ({open}) => {
   return (
     <Ul open={open}>
-        <li>Inicio</li>
-        <li>Productos</li>
-        <li>Verano 23</li>
-        <li>Info</li>
+   <Link to='/' style={{textDecoration:'none',}}> <li>Inicio</li></Link> 
+   <Link to='/products' style={{textDecoration:'none',}}> <li>Productos</li></Link> 
+   <Link to='/cart' style={{textDecoration:'none',}}> <li>Verano 23</li></Link> 
+      <li>Info</li>
         <li>Contacto</li>
     </Ul>
   )
