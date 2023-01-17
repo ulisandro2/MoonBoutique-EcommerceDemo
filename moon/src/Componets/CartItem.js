@@ -14,6 +14,8 @@ const CartItem = ({product,amount}) => {
         <p>precio del producto ${product.price}</p>
         <p>cantidad{amount}</p>
         
+        
+        
     </div>
     </>
   )

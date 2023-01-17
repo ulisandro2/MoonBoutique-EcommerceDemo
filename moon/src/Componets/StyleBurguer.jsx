@@ -8,7 +8,7 @@ const Burguer =styled.div`
     cursor: pointer;
     height: 28px;
     width: 28px;
-    color: #0f0e0e;
+    color: #f7f7f7;
     padding: 0px;
     margin: 0 15px;
     
@@ -20,7 +20,7 @@ div{
     width: 2rem;
     height: 0.25rem;
    
-    background-color: ${({open})=> open ? '#ece5e5' : '#070707'};
+    background-color: ${({open})=> open ? '#f3ecec' : '#fbfbfb'};
     transform-origin:1px ;
     border-radius: 10px;
     transition: all 0.3s linear;
