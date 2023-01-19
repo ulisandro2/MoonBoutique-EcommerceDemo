@@ -1,29 +1,24 @@
 import React from 'react'
-import styled from 'styled-components';
+import "../css/StyleItemList.css"
 import Item from './Item'
 
 
 const ItemList = ({product}) => {
   return (
-    <List>
+    <div className='itemList'>
       
-     {product.map((product) => <Item product={product}/> )}
+     {product.map((product) => <Item key={product.id} product={product}/> )}
      
-     </List>
+     </div>
   );
 }
 
 
-const List = styled.div`
-display: flex;
-justify-content: center;
- align-items: center;
- margin-top: 20px;
- text-align:center ;
- flex-wrap: wrap;
 
 
-`
+
+
+
 
 
 export default ItemList

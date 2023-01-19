@@ -27,13 +27,18 @@ const AddToCart = (amount, product) => {
 
 }
 
+const DelItem = (id) => {
+  const items = cart.filter((product)=> product.id === id);
+  return setCart(items)
+}
+
 
 const IconCart = () =>{
   return cart.reduce((acum,i) => acum + i.amount,0)
 }
 
 const PriceTotal = () => {
-  return cart.reduce((acum,i) => acum+ i.amount * i.product.precio,0)
+  return cart.reduce((acum,i) => acum + i.amount * i.product.price,0)
 }
 
 const IsInCart = (id) => {
@@ -46,7 +51,7 @@ const EmptyCart = () => {
 }
 
 return(
-  <CartContext.Provider value={{AddToCart,cart ,EmptyCart,PriceTotal, IconCart,setCount,count}}>
+  <CartContext.Provider value={{AddToCart,cart ,EmptyCart,PriceTotal, IconCart,setCount,count,DelItem}}>
     {children}
   </CartContext.Provider>
 )

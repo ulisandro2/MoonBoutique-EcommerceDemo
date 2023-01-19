@@ -1,19 +1,10 @@
 import React, {useState} from 'react'
 import Logo from '../imagenes/Moon-white-sin-b.png';
 import '../css/StyleNavbar.css';
-
 import { GiShoppingBag} from 'react-icons/gi';
 import StyleBurguer from './StyleBurguer';
-
 import { Link } from 'react-router-dom';
 import { UseCartContext } from '../context/CartContext';
-
-
-
-
-
-
-
 
 
 const Navbar = () => {

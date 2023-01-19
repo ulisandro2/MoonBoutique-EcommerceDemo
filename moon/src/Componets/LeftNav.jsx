@@ -36,7 +36,7 @@ const LeftNav = ({open}) => {
   return (
     <Ul open={open}>
    <Link to='/' style={{textDecoration:'none',}}> <li>Inicio</li></Link> 
-   <Link to='/products' style={{textDecoration:'none',}}> <li>Productos</li></Link> 
+   <Link to='products' style={{textDecoration:'none',}}> <li>Productos</li></Link> 
    <Link to='/cart' style={{textDecoration:'none',}}> <li>Verano 23</li></Link> 
       <li>Info</li>
         <li>Contacto</li>

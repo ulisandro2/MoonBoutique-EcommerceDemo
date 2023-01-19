@@ -32,7 +32,7 @@ const ItemDetail = ( {product} ) => {
                        <button className='btnCarrito'>Ir al Cart</button>
                        </Link>
                        :
-                     <ItemCount initial={1} stock={20} onAdd={onAdd} />  
+                       <ItemCount initial={1} stock={20} onAdd={onAdd} />  
                       } 
                    </div>
                   </div>
