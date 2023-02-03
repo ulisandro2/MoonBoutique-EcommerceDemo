@@ -1,21 +1,15 @@
 import React, {useState} from 'react'
 import Logo from '../imagenes/Moon-white-sin-b.png';
 import '../css/StyleNavbar.css';
-
 import { GiShoppingBag} from 'react-icons/gi';
 import StyleBurguer from './StyleBurguer';
-import MainBackground from './MainBackground';
-
-
-
-
-
-
+import { Link } from 'react-router-dom';
+import { UseCartContext } from '../context/CartContext';
 
 
 const Navbar = () => {
  
-    
+    const {cart , IconCart} = UseCartContext()
  
   const[navbar , setNavbar] = useState(false);
   const changeBackground = () => {
@@ -59,7 +53,11 @@ const Navbar = () => {
 
             <div className="col">
               <div className="col__laterales jc-end">
-                <GiShoppingBag className="icon"></GiShoppingBag>
+                <Link to="cart">
+                <GiShoppingBag className="icon" color='white'/>
+                <span className='cart-count'>{cart.length < 1 ? "" : <p>{IconCart()}</p>}</span>
+                
+                </Link>
               </div>  
             </div>
           </div>
