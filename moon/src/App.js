@@ -9,7 +9,7 @@ import Collection from './Componets/Collection';
 import CartContexProvider from './context/CartContext'
 import ItemDetailContainer from './Containers/ItemDetailContainer';
 import Cart from './Componets/Cart';
-import Product from './Componets/Product';
+
 
 
 
@@ -33,8 +33,7 @@ function App() {
           <Route path='*' element={<Navigate to='/' />} />
     </Routes>
     <Collection />
-   
-    <Product/>
+  
     <Footer />
     <Borders />
     </BrowserRouter>

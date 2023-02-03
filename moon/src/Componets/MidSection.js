@@ -6,7 +6,7 @@ const MidSection = () => {
     <section className="mid-section">
       <div className="mid-section__container">
         <h1 className="moon-title">Moon Boutique</h1>
-        <h6 className="moon-description">Alguna fantasmeda por acá... bla bla bla bla</h6>
+        <h6 className="moon-description">Prendas unicas, clasicas , atemporales. Para cada momento. </h6>
       </div>
     </section>
   )

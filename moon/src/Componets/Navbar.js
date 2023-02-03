@@ -31,7 +31,7 @@ const Navbar = () => {
     <>
     <header >
       <div className={navbar ? 'header-container active' : 'header-container'} >
-        <section className="section-advertising"><h6 className="info__text">Turip ip ip / -Elperro qepd</h6></section>
+        <section className="section-advertising"><h6 className="info__text">6 cuotas sin interes / 10% off efectivo </h6></section>
         <nav className="nav-container" >
           <div className="nav-container__columnas">
             <div className="col">

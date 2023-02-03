@@ -51,11 +51,11 @@ const EmptyCart = () => {
 }
 
 return(
-<<<<<<< HEAD
-  <CartContext.Provider value={{AddToCart,cart ,EmptyCart,PriceTotal, IconCart,setCount,count}}>
-=======
+
+
+
   <CartContext.Provider value={{AddToCart,cart ,EmptyCart,PriceTotal, IconCart,setCount,count,DelItem}}>
->>>>>>> 66940aecb9670902e6bf42216774b0567e268d66
+
     {children}
   </CartContext.Provider>
 )
