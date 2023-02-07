@@ -28,7 +28,7 @@ const Home = () => {
         }}>
           <div className='frase1'>
            <h2 >{frase1}</h2>
-            <button type="button" className="btn btn-dark boton-center">Shop</button>
+           <button className='btnFrase'>Shop</button>
           </div>
         </div>
 
@@ -37,7 +37,8 @@ const Home = () => {
         }}>
           <div className='frase2'>
             <h2 >{frase2}</h2>
-            <button type="button" className="btn btn-dark boton-center">Shop</button>
+            <button className='btnFrase'>Shop</button>
+            
           </div>
         </div>
 

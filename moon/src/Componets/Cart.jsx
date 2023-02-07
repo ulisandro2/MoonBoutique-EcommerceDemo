@@ -17,6 +17,12 @@ if(cart.length < 1){
 
     <CartContainer>
     <div>no hay productos</div>
+    <div className='continue-shopping'>
+            <Link style={{textDecoration:'none',}} to="/products">
+             
+             <span > <GrLinkPrevious/> Go Shopping</span>
+            </Link>
+          </div>
     </CartContainer>
   )
 }else{
@@ -67,18 +73,27 @@ const CartContainer = styled.div`
 padding:3rem;
 margin-top: 100px;
 
+@media screen and (max-width:650px){
+
+  .cart-summary .clear-cart{
+    height: 60px;
+  }
+
+}
+
 .cart-summary{
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
   border-top: 1px solid rgb(187,187,187);
   padding-top: 2rem;
+  flex-direction: column;
 }
 
 .cart-summary .clear-cart{
   width: 130px;
   max-width: 100%;
-  height: 40px;
+  height: 50px;
   font-weight: 400;
   letter-spacing: 1.15px;
   border-radius: 5px;
@@ -92,6 +107,7 @@ margin-top: 100px;
 .cart-checkout{
   width: 200px;
   max-width: 100%;
+  margin-top: 20px;
 
 }
 

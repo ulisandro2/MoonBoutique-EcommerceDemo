@@ -47,7 +47,7 @@ const Navbar = () => {
 
             <div className="col">
               <div className="logo">
-                <a href="#"><img alt='' src={Logo} className="moon"></img></a>
+                <a alt='' href="#"><img alt='' src={Logo} className="moon"></img></a>
               </div>
             </div>
 

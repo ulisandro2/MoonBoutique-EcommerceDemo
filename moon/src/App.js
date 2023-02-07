@@ -9,6 +9,8 @@ import Collection from './Componets/Collection';
 import CartContexProvider from './context/CartContext'
 import ItemDetailContainer from './Containers/ItemDetailContainer';
 import Cart from './Componets/Cart';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 
@@ -20,6 +22,7 @@ function App() {
   return <div className='App'>
     <CartContexProvider>
     <BrowserRouter>
+    <ToastContainer/>
     <Navbar />
     
     <Routes>

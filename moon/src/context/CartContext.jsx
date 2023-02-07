@@ -1,4 +1,5 @@
 import React,{useState,useContext ,createContext} from 'react'
+import { toast } from 'react-toastify';
 
 
  export const CartContext = createContext([]);
@@ -19,15 +20,21 @@ const AddToCart = (amount, product) => {
     item = cart.find(e => e.product.id === product.id);
     product.amount += amount;
     auxCart= [...cart]
+ 
     
   } else {
-       auxCart = [item, ...cart];    
+       auxCart = [item, ...cart]; 
+       toast.success('agregando producto',{
+        position:'top-right',
+       })   
   }
   setCart(auxCart);
 
 }
 
 const DelItem = (id) => {
+
+  
   const items = cart.filter((product)=> product.id === id);
   return setCart(items)
 }

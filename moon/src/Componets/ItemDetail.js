@@ -66,6 +66,19 @@ const StyleDetail = styled.div`
  margin: 30px auto;
  box-shadow: 0 0 5px #ccc;
 
+ .btnCarrito{
+  width: 100px;
+  margin: 0.2rem;
+  letter-spacing: 1.15px;
+  border-radius: 5px;
+  border: 0.5px solid rgb(187,187,187) ;
+  color: gray;
+  background: none;
+  outline: none;
+  cursor: pointer;
+ }
+
+
  .details{
   display: flex;
   justify-content: space-around;
@@ -142,7 +155,8 @@ const StyleDetail = styled.div`
     }
 
     .thumb img{
-      width:80px
+      width:90px;
+      height: 120px;
     }
 
     /* .details .big-img{

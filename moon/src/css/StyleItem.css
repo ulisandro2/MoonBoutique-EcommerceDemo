@@ -48,14 +48,14 @@
     list-style: none;
   }
 
-  .card-title h2{
+  .card-title{
     line-height: 1rem;
     margin-bottom: 0.5rem;
-    font-size: 1rem;
+    font-size: 14px;
   }
 
   .card-price{
-    font-size: 1rem;
+    font-size: 0.8rem;
     margin-top: 1rem;
 
    
@@ -128,12 +128,12 @@
   .card-title{
     line-height: 3rem;
     margin-bottom: 0.5rem;
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .card-price{
-    font-size: 2rem;
-    margin-top: 1rem;
+    font-size: 1.8rem;
+    margin-top: 0.8rem;
 
    
 

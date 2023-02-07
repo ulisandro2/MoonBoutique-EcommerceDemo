@@ -1,9 +1,11 @@
 import React from 'react'
+
 import styled from 'styled-components'
 import { CartContext, UseCartContext } from '../context/CartContext'
 
 const CartItem = ({product,amount}) => {
-
+  
+  
   const {DelItem} = UseCartContext(CartContext)
 
 
@@ -20,13 +22,13 @@ const CartItem = ({product,amount}) => {
       <div className='cart-item' key={product.id}>
         <div className='cart-product'>
           <img alt='' src={product.img}/>
-          <div>
+          <div className='cart-title'>
             <h3>{product.title}</h3>
-            <button onClick={(id)=> {DelItem(id)}}>Remove</button>
+            <button onClick={()=> {{DelItem()}}}>Remove</button>
           </div>
         </div>
         <div className='cart-product-price'>${product.price}</div>
-          <div className='cart-product-quanity'>{amount}</div>
+          <div className='cart-product-quantity'>{amount}</div>
           <div className='cart-price-total'>${product.price * amount}</div>
          
       </div>
@@ -37,13 +39,47 @@ const CartItem = ({product,amount}) => {
 const CartContainer = styled.div`
 padding:2rem 4rem;
 
-.titles{
-  margin: 2rem 0 1rem 0 ;
+
+
+@media screen and (max-width:650px) {
+
+  padding: 0.2rem;
+  display: flex;
+  flex-direction: column-reverse;
+  
+
+  .titles .product-title ,.price ,.Quantity , .total{
+  display: none;
+   }
+       
+ 
+.cart-item .cart-product h3{
+  font-weight: 400;
+  font-size: 17px;
+}
+
+.cart-product-price , .cart-product-quantity, .cart-price-total{
+   padding-top: 120px;
+   
+}
+
+.cart-item .cart-product button{
+  margin-top: 0.3rem;
+}
+
+
 
 }
 
+
+
+.titles{
+  margin: 2rem 0 1rem 0 ;
+ 
+}
+
 .titles h3{
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 400;
   text-transform: uppercase;
 }
@@ -62,7 +98,7 @@ padding:2rem 4rem;
 }
 
 .titles .product-title{
-  padding-left: 0.5rem;
+  padding-left: 0rem;
 }
 
 .cart-item .cart-product{
@@ -76,13 +112,13 @@ padding:2rem 4rem;
 }
 
 .cart-item .cart-product h3{
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .cart-item .cart-product button{
   border: none;
   outline: none;
-  margin-top: 0.7rem;
+  
   cursor: pointer;
   background: none;
   color: gray;
@@ -95,6 +131,10 @@ padding:2rem 4rem;
 .cart-price-total{
   font-weight: 700;
 }
+
+/* .cart-product-price , .cart-product-quantity, .cart-price-total{
+   font-size: 20px;
+} */
 
 `
 
