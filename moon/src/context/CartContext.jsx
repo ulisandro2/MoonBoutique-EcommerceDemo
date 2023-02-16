@@ -24,7 +24,7 @@ const AddToCart = (amount, product) => {
     
   } else {
        auxCart = [item, ...cart]; 
-       toast.success('agregando producto',{
+       toast.success( `agregando ${product.title}  al carrito `,{
         position:'top-right',
        })   
   }

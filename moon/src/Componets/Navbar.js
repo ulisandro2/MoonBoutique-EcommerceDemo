@@ -53,7 +53,7 @@ const Navbar = () => {
 
             <div className="col">
               <div className="col__laterales jc-end">
-                <Link to="cart">
+                <Link to="cart" style={{textDecoration:'none',}}>
                 <GiShoppingBag className="icon" color='white'/>
                 <span className='cart-count'>{cart.length < 1 ? "" : <p>{IconCart()}</p>}</span>
                 

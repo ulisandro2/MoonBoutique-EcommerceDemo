@@ -6,11 +6,13 @@ import ItemListContainer from './Containers/ItemListContainer';
 import Footer from './Componets/Footer';
 import Borders from './Componets/Borders';
 import Collection from './Componets/Collection';
-import CartContexProvider from './context/CartContext'
+import CartContexProvider from './context/CartContext';
 import ItemDetailContainer from './Containers/ItemDetailContainer';
 import Cart from './Componets/Cart';
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Info from './Componets/Info';
+import Contact from './Componets/Contact';
 
 
 
@@ -33,10 +35,12 @@ function App() {
            </Route>
           <Route path='/detail/:id' element={<ItemDetailContainer/>} />
           <Route path='/cart' element={<Cart/>} />
+          <Route path='/info' element={<Info/>}/>
+          <Route path='/contact' element={<Contact/>}/>
           <Route path='*' element={<Navigate to='/' />} />
     </Routes>
     <Collection />
-  
+    
     <Footer />
     <Borders />
     </BrowserRouter>

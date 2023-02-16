@@ -5,6 +5,7 @@ import foto2 from '../imagenes/topRosa.jpg'
 import MidSection from './MidSection'
 import InstagramGallery from './InstagramGallery'
 import MainBackground from './MainBackground'
+import { Link } from 'react-router-dom'
 
 
 
@@ -28,7 +29,7 @@ const Home = () => {
         }}>
           <div className='frase1'>
            <h2 >{frase1}</h2>
-           <button className='btnFrase'>Shop</button>
+           <Link to='/products'> <button className='btnFrase'>Shop</button></Link>
           </div>
         </div>
 
@@ -37,7 +38,7 @@ const Home = () => {
         }}>
           <div className='frase2'>
             <h2 >{frase2}</h2>
-            <button className='btnFrase'>Shop</button>
+        <Link to='/products'>    <button className='btnFrase'>Shop</button> </Link>
             
           </div>
         </div>

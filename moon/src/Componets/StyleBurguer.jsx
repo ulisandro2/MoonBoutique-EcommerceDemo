@@ -18,7 +18,7 @@ const Burguer =styled.div`
 
 div{
     width: 2rem;
-    height: 0.25rem;
+    height: 0.27rem;
    
     background-color: ${({open})=> open ? '#f3ecec' : '#fbfbfb'};
     transform-origin:1px ;
